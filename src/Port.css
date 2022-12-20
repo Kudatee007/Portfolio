@@ -1,3 +1,7 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 .KudaPort {
   background: linear-gradient(
     155.63deg,
@@ -6,6 +10,7 @@
     #082b2e 42.31%
   );
   height: 100vh;
+  /* padding-bottom: 120px; */
 }
 .icon {
   background: rgba(0, 0, 0, 0.12);
@@ -21,4 +26,35 @@
 }
 .Kud {
   width: 230px;
+}
+.Section {
+  text-align: center;
+
+}
+.Hello {
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 60px;
+  color: #838383;
+  padding-top: 25px;
+  padding-bottom: 4px;
+}
+.Name {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 24px;
+  color: #ffffff;
+  padding-bottom: 30px;
+}
+.Scroll {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
 }
