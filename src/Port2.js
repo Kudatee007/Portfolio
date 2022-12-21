@@ -17,57 +17,95 @@ const Port2 = () => {
         <h2>Websites</h2>
       </div>
       <div className="MainBox">
-        <div className="Box">
-          <h1>TradExpress</h1>
-          <img src={Trad} alt="" />
-          <h5 className="TradH">A fully responsive cryptocurrency website </h5>
-          <h6>Front End</h6>
-          <h6>React - JS</h6>
-        </div>
-        <div className="Box">
-          <h1>TradExpress Home</h1>
-          <img src={TradHome} alt="" />
-          <h5 className="TradHH">
-            A fully responsive website featuring TradExpress homepage
-          </h5>
-          <h6>Front End</h6>
-          <h6>React - JS</h6>
-        </div>
-        <div className="Box">
-          <h1>Loopstudios</h1>
-          <img src={Loop} alt="" />
-          <h5 className="LoopH">A fully responsive designed website </h5>
-          <h6>Front End</h6>
-          <h6>HTML - CSS</h6>
-        </div>
-        <div className="Box" id="Box">
-          <h1>Metabnb</h1>
-          <img src={Meta} alt="" />
-          <h5 className="MetaH">
-            A fully responsive website featuring an insight into MetaVerse
-          </h5>
-          <h6>Front End</h6>
-          <h6>React - JS</h6>
-        </div>
-        <div className="Box" id="Box">
-          <h1>Resturant</h1>
-          <img src={Rest} alt="" />
-          <h5 className="RestH">A fully responsive onepage website </h5>
-          <h6>Front End</h6>
-          <h6>HTML - CSS</h6>
-        </div>
+        <a
+          href="https://amazing-sable-a0e49d.netlify.app"
+          className="no-underline"
+          target="blank"
+        >
+          <div className="Box">
+            <h1>TradExpress</h1>
+            <img src={Trad} alt="" />
+            <h5 className="TradH">
+              A fully responsive cryptocurrency website{" "}
+            </h5>
+            <h6>Front End</h6>
+            <h6>React - JS</h6>
+          </div>
+        </a>
+        <a
+          href="https://calm-bombolone-0e9891.netlify.app/"
+          className="no-underline"
+          target="blank"
+        >
+          <div className="Box">
+            <h1>TradExpress Home</h1>
+            <img src={TradHome} alt="" />
+            <h5 className="TradHH">
+              A fully responsive website featuring TradExpress homepage
+            </h5>
+            <h6>Front End</h6>
+            <h6>React - JS</h6>
+          </div>
+        </a>
+        <a
+          href="https://resonant-fenglisu-442396.netlify.app/"
+          className="no-underline"
+          target="blank"
+        >
+          <div className="Box">
+            <h1>Loopstudios</h1>
+            <img src={Loop} alt="" />
+            <h5 className="LoopH">A fully responsive designed website </h5>
+            <h6>Front End</h6>
+            <h6>HTML - CSS</h6>
+          </div>
+        </a>
+        <a
+          href="https://dancing-pothos-a57103.netlify.app/"
+          className="no-underline"
+          target="blank"
+        >
+          <div className="Box" id="Box">
+            <h1>Metabnb</h1>
+            <img src={Meta} alt="" />
+            <h5 className="MetaH">
+              A fully responsive website featuring an insight into MetaVerse
+            </h5>
+            <h6>Front End</h6>
+            <h6>React - JS</h6>
+          </div>
+        </a>
+        <a
+          href="https://splendorous-centaur-5a7db1.netlify.app"
+          className="no-underline"
+          target="blank"
+        >
+          <div className="Box" id="Box1">
+            <h1>Resturant</h1>
+            <img src={Rest} alt="" />
+            <h5 className="RestH">A fully responsive onepage website </h5>
+            <h6>Front End</h6>
+            <h6>HTML - CSS</h6>
+          </div>
+        </a>
       </div>
       <div className="Web">
         <h2>Web Apps</h2>
       </div>
       <div>
-        <div className="BigB">
-          <h1>Rock Paper Scissor</h1>
-          <img src={Rock} alt="" />
-          <h5>A fun version of the classic game Rock,Paper,Scissors. </h5>
-          <h6>Front End</h6>
-          <h6>React - JS</h6>
-        </div>
+        <a
+          href="https://nimble-wisp-fc8e38.netlify.app/"
+          className="no-underline"
+          target="blaank"
+        >
+          <div className="BigB">
+            <h1>Rock Paper Scissor</h1>
+            <img src={Rock} alt="" />
+            <h5>A fun version of the classic game Rock,Paper,Scissors. </h5>
+            <h6>Front End</h6>
+            <h6>React - JS</h6>
+          </div>
+        </a>
       </div>
       <div className="Web">
         <h2>Web Apps</h2>
@@ -101,7 +139,7 @@ const Port2 = () => {
               all the new technologies available.
             </p>
           </div>
-          <div>
+          <div id="Modern2">
             <img src={Phone} alt="" />
             <h4>More Traffic</h4>
             <p className="pp1">
@@ -116,18 +154,27 @@ const Port2 = () => {
         <h2>THE PROCESS</h2>
       </div>
 
-      <div className="Sect3">
+      {/* <div className="Sect3">
         <div className="sect3">
-            <h1>Contact Disclosure</h1>
-            <p>I look forward to hearing about how i can help with your next project</p>
-            <p>i'll answer all inquiries s soon as humanly possible!</p>
+          <h1>Contact Disclosure</h1>
+          <p>
+            I look forward to hearing about how i can help with your next
+            project
+          </p>
+          <p>i'll answer all inquiries s soon as humanly possible!</p>
         </div>
         <div className="ssect3">
-            <h4>Location: <span>Lagos State, Nigeria</span></h4>
-            <h4>Email: <span>Timilehinkudaisi01@gmail.com</span></h4>
-            <h4>Phone: <span>0904 744 54 5458</span></h4>
+          <h4>
+            Location: <span>Lagos State, Nigeria</span>
+          </h4>
+          <h4>
+            Email: <span>Timilehinkudaisi01@gmail.com</span>
+          </h4>
+          <h4>
+            Phone: <span>0904 744 54 5458</span>
+          </h4>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -4,6 +4,7 @@ import KudaIcon from "./Image/stacksantos.dev by html.to.design ❤️ FREE vers
 import Profile from "./Image/stacksantos.dev by html.to.design ❤️ FREE version - 18/12/Group 26.svg";
 import Arrow from "./Image/stacksantos.dev by html.to.design ❤️ FREE version - 18/12/i.svg";
 import "./Port.css";
+import Mail from './Image/site1/stacksantos.dev by html.to.design ❤️ FREE version - 18/12/container.svg'
 
 const Port = () => {
   return (
@@ -14,8 +15,11 @@ const Port = () => {
           <img src={KudaIcon} alt="" />
         </div>
       </div>
+      <div>
+        ddd
+      </div>
       <div className="Section">
-        <img src={Profile} alt="" />
+        <img src={Profile} alt="" className="Profile"/>
         <h1 className="Hello">Hello There</h1>
         <h6 className="Name">
           My name is Timilehin and I'm a Lagos State based Front-End Web
@@ -24,6 +28,9 @@ const Port = () => {
         <p className="Scroll">scroll to continue</p>
         <img src={Arrow} alt="" />
       </div>
+      <a href="mailto:timilehinkudaisi01@gmail.com">
+      <img src={Mail} alt="" className="Mail"/>
+      </a>
     </div>
   );
 };
