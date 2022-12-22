@@ -9,6 +9,7 @@ import Rock from "./Image/site2/stacksantos.dev by html.to.design ❤️ FREE ve
 import Prome from "./Image/site1/stacksantos.dev by html.to.design ❤️ FREE version - 18/12/rps-screenshot.webp.svg";
 import Phone from "./Image/site1/stacksantos.dev by html.to.design ❤️ FREE version - 18/12/.svg";
 import Phone1 from "./Image/site1/stacksantos.dev by html.to.design ❤️ FREE version - 18/12/.svg";
+import Download from './Image/site/stacksantos.dev by html.to.design ❤️ FREE version - 18/12/Vector.svg'
 
 const Port2 = () => {
   return (
@@ -108,7 +109,7 @@ const Port2 = () => {
         </a>
       </div>
       <div className="Web">
-        <h2>Web Apps</h2>
+        <h2>Currently Working on</h2>
       </div>
       <div className="BB">
         <div className="BigB">
@@ -154,27 +155,26 @@ const Port2 = () => {
         <h2>THE PROCESS</h2>
       </div>
 
-      {/* <div className="Sect3">
-        <div className="sect3">
-          <h1>Contact Disclosure</h1>
-          <p>
-            I look forward to hearing about how i can help with your next
-            project
-          </p>
-          <p>i'll answer all inquiries s soon as humanly possible!</p>
-        </div>
-        <div className="ssect3">
-          <h4>
-            Location: <span>Lagos State, Nigeria</span>
-          </h4>
-          <h4>
-            Email: <span>Timilehinkudaisi01@gmail.com</span>
-          </h4>
-          <h4>
-            Phone: <span>0904 744 54 5458</span>
-          </h4>
-        </div>
-      </div> */}
+      <div className="About">
+        <h1>A Little About Me</h1>
+        <p className="AboutP1">
+          As a student studying finance, I have developed a strong foundation in
+          financial analysis and decision-making. However, I have always had a
+          passion for front-end web development and have dedicated much of my
+          time to learning and improving my skills in this area. I am skilled in
+          HTML, CSS, and JavaScript and have a strong eye for design. I am
+          determined to become a well-rounded developer and am always seeking
+          out new challenges and opportunities to improve my skills.
+        </p>
+        <p className="AboutP2">
+          In my spare time, I enjoy working on personal projects and
+          collaborating with others to create beautiful and functional websites.
+        </p>
+        <button className="BtnDownload">
+            <img src={Download} alt="" />
+            <p>Download Resume</p>
+        </button>
+      </div>
     </div>
   );
 };

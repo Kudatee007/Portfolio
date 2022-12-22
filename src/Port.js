@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Kuda from "./Image/stacksantos.dev by html.to.design ❤️ FREE version - 18/12/container.svg";
 import KudaIcon from "./Image/stacksantos.dev by html.to.design ❤️ FREE version - 18/12/.svg";
 import Profile from "./Image/stacksantos.dev by html.to.design ❤️ FREE version - 18/12/Group 26.svg";
@@ -7,16 +7,24 @@ import "./Port.css";
 import Mail from './Image/site1/stacksantos.dev by html.to.design ❤️ FREE version - 18/12/container.svg'
 
 const Port = () => {
+  const [expand, setExpand] = useState(true);
+
+  function Handler() {
+    setExpand(!expand);
+  }
   return (
     <div className="KudaPort">
-      <div className="Head">
         <img src={Kuda} alt="" className="Kud" />
-        <div className="icon">
+      <div className="icon" onClick={Handler}>
           <img src={KudaIcon} alt="" />
         </div>
-      </div>
-      <div>
-        ddd
+      <div className={!expand ? "Sidebar" : "Sidebar Sidebar-NX"}>
+        <div className="Side">
+        <h2>Home</h2>
+        <h2>Portfolio</h2>
+        <h2>About</h2>
+        <h2>Contact</h2>
+        </div>
       </div>
       <div className="Section">
         <img src={Profile} alt="" className="Profile"/>

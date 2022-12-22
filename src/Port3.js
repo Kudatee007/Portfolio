@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useRef} from "react";
+import emailjs from 'emailjs-com';
 import "./Port3.css";
 import Locate from "./Image/site1/stacksantos.dev by html.to.design ❤️ FREE version - 18/12/Group.svg";
 import Message from "./Image/site2/stacksantos.dev by html.to.design ❤️ FREE version - 18/12/Group.svg";
@@ -6,8 +7,22 @@ import Phone from "./Image/site2/stacksantos.dev by html.to.design ❤️ FREE v
 import Arrow from "./Image/site1/stacksantos.dev by html.to.design ❤️ FREE version - 18/12/Vector.svg";
 
 const Port3 = () => {
+    const form = useRef();
+
+    function sendEmail(e) {
+        e.preventDefault();
+
+        emailjs.sendForm('gmail', 'template_bhz5txr', e.target, '0UKUum03i5SkKtrwq')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+          e.target.reset()
+    }
   return (
-    <div className="Footer">
+    <div>
+      <form onSubmit={sendEmail} ref={form} className="Footer">
       <div className="foot">
         <h1>Contact Disclosure</h1>
         <p>
@@ -32,15 +47,16 @@ const Port3 = () => {
         </div>
         <div className="Input">
           <h2 className="inTouch">Lets get in touch. Send me a message</h2>
-          <input type="text" placeholder="Name" className="inputName"/>
-          <input type="text" placeholder="Email" className="inputEmail"/>
-          <textarea name="Message" id="" cols="30" rows="4" className="inputText" placeholder="Message"></textarea>
-          <button className="Btnsend">
+          <input type="text" placeholder="Name" className="inputName" name="user_name"/>
+          <input type="text" placeholder="Email" className="inputEmail" name="user_email"/>
+          <textarea name="message" id="" cols="30" rows="4" className="inputText" placeholder="Message"></textarea>
+          <button className="Btnsend" type="submit" value="Send">
             <img src={Arrow} alt="" />
-            <p>SEND MESSAGE</p>
+            SEND MESSAGE
           </button>
         </div>
       </div>
+      </form>
     </div>
   );
 };
