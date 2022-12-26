@@ -396,9 +396,6 @@
   .Box > img {
     width: 75%;
   }
-  .Kud {
-    width: 170px;
-  }
   .Name {
     line-height: 25px;
   }
@@ -452,9 +449,7 @@
   h5.TradH {
     width: 20ch;
   }
-  .Kud {
-    width: 150px;
-  }
+  
   .Profile {
     width: 250px;
   }

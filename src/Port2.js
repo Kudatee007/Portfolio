@@ -13,7 +13,7 @@ import Download from './Image/site/stacksantos.dev by html.to.design ❤️ FREE
 
 const Port2 = () => {
   return (
-    <div>
+    <div id="Portfolio">
       <div className="Web">
         <h2>Websites</h2>
       </div>
@@ -155,7 +155,7 @@ const Port2 = () => {
         <h2>THE PROCESS</h2>
       </div>
 
-      <div className="About">
+      <div className="About" id="About">
         <h1>A Little About Me</h1>
         <p className="AboutP1">
           As a student studying finance, I have developed a strong foundation in

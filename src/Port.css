@@ -31,9 +31,8 @@
   padding-top: 100px;
 }
 .Hello {
-  font-family: "Times New Roman", Times, serif;
+  font-family: cursive;
   font-style: normal;
-  font-weight: 400;
   font-size: 52px;
   line-height: 60px;
   color: #838383;
@@ -71,14 +70,23 @@
     right: 0;
     top: 0;
     opacity: 0.7;
+    transition: 0.5s;
 }
 .Sidebar-NX{
-    display: none;
+    right: -500px;
+    
 }
-.Side > h2 {
+.Side > a {
+   
+    text-decoration: none;
+}
+.Sideh2{
     color: white;
     padding-bottom: 50px;
     box-sizing: border-box;
+}
+.Sideh2:hover{
+    color: rgb(145, 143, 143);
 }
 .Side{
     padding-top: 110px;
@@ -128,4 +136,19 @@
     .Sidebar{
         width: 100%;
     }
+    .Kud {
+        width: 160px;
+      }
+      .icon{
+        top: 12px;
+      }
+}
+@media (max-width: 420px) {
+    .Kud {
+        width: 120px;
+      }
+      .icon{
+        top: 5px;
+        right: 7px;
+      }
 }

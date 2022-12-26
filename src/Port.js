@@ -13,17 +13,17 @@ const Port = () => {
     setExpand(!expand);
   }
   return (
-    <div className="KudaPort">
+    <div className="KudaPort" id="Home">
         <img src={Kuda} alt="" className="Kud" />
       <div className="icon" onClick={Handler}>
           <img src={KudaIcon} alt="" />
         </div>
       <div className={!expand ? "Sidebar" : "Sidebar Sidebar-NX"}>
         <div className="Side">
-        <h2>Home</h2>
-        <h2>Portfolio</h2>
-        <h2>About</h2>
-        <h2>Contact</h2>
+        <a href="#Home"><h2 className="Sideh2">Home</h2></a>
+        <a href="#Portfolio"><h2 className="Sideh2">Portfolio</h2></a>
+        <a href="#About"> <h2 className="Sideh2">About</h2></a>
+        <a href="#Contact"><h2 className="Sideh2">Contact</h2></a>
         </div>
       </div>
       <div className="Section">
