@@ -9,7 +9,8 @@ import Rock from "./Image/site2/stacksantos.dev by html.to.design ❤️ FREE ve
 import Prome from "./Image/site1/stacksantos.dev by html.to.design ❤️ FREE version - 18/12/rps-screenshot.webp.svg";
 import Phone from "./Image/site1/stacksantos.dev by html.to.design ❤️ FREE version - 18/12/.svg";
 import Phone1 from "./Image/site1/stacksantos.dev by html.to.design ❤️ FREE version - 18/12/.svg";
-import Download from './Image/site/stacksantos.dev by html.to.design ❤️ FREE version - 18/12/Vector.svg'
+import Download from "./Image/site/stacksantos.dev by html.to.design ❤️ FREE version - 18/12/Vector.svg";
+import Resume from "./Image/site/stacksantos.dev by html.to.design ❤️ FREE version - 18/KUDAISI TIMILEHIN (2).pdf";
 
 const Port2 = () => {
   return (
@@ -170,10 +171,12 @@ const Port2 = () => {
           In my spare time, I enjoy working on personal projects and
           collaborating with others to create beautiful and functional websites.
         </p>
-        <button className="BtnDownload">
+        <a href={Resume} download={Resume}>
+          <button className="BtnDownload">
             <img src={Download} alt="" />
             <p>Download Resume</p>
-        </button>
+          </button>
+        </a>
       </div>
     </div>
   );

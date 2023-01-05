@@ -1,9 +1,16 @@
 .Footer {
-  background-color: #0e4454;
   display: flex;
   justify-content: space-around;
   padding: 85px 85px;
 }
+.footLogo{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.Footer1 {
+    background-color: #0e4454;
+}
+    
 .foot > h1 {
   font-family: "Contrail One";
   font-style: normal;
@@ -119,6 +126,7 @@
 }
 .Btnsend:hover{
     opacity: 0.8;
+    background: rgba(10, 10, 10, 0.2);
 }
 @media (max-width: 1200px) {
     .inputEmail {
